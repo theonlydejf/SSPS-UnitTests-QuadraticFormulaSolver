@@ -8,7 +8,8 @@ namespace SSPS_UnitTests_QuadraticFormulaSolver
     {
         public QuadraticExpression(double a, double b, double c)
         {
-            //TODO Check for impossible quadratic formulas -> throw MissingEquationMemberException
+            if (a == 0)
+                throw new MissingExpressionMembersException("A");
 
             A = a;
             B = b;
