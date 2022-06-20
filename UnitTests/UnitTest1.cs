@@ -44,9 +44,10 @@ namespace UnitTests
         }
 
         [Test]
-        public void TestResulEquality()
+        public void TestResultEquality()
         {
             Assert.AreEqual(new QuadraticEquationResult(1, 2), new QuadraticEquationResult(2, 1));
+            Assert.AreEqual(QuadraticEquationResult.NULL, QuadraticEquationResult.NULL);
         }
 
         [Test]
