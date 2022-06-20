@@ -20,9 +20,6 @@ namespace SSPS_UnitTests_QuadraticFormulaSolver
 
         public QuadraticEquationResult SolveForZero() => SolveFor(0);
 
-        public double GetDiscriminant()
-        {
-            throw new NotImplementedException();
-        }
+        public double GetDiscriminant() => _expression.B * _expression.B - 4 * _expression.A * _expression.C;
     }
 }
