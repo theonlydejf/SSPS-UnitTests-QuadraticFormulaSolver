@@ -18,7 +18,7 @@ namespace SSPS_UnitTests_QuadraticFormulaSolver
             double a = _expression.A;
             double b = _expression.B;
             double c = _expression.C;
-
+            
             double d = GetDiscriminant();
 
             if (d < 0)
@@ -27,8 +27,8 @@ namespace SSPS_UnitTests_QuadraticFormulaSolver
             if (d == 0)
                 return new QuadraticEquationResult(-b / (2 * a), -b / (2 * a));
 
-            double x1 = (-b + Math.Sqrt(d)) / 2 * a;
-            double x2 = (-b - Math.Sqrt(d)) / 2 * a;
+            double x1 = (-b + Math.Sqrt(d)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(d)) / (2 * a);
 
             return new QuadraticEquationResult(x1, x2);
         }

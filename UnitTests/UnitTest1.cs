@@ -9,7 +9,9 @@ namespace UnitTests
         {
             new object[] { new QuadraticExpression(1, 0, 1), QuadraticEquationResult.NULL, -4 },
             new object[] { new QuadraticExpression(1, 0, 0), new QuadraticEquationResult(0, 0), 0 },
-            new object[] { new QuadraticExpression(1, 0, -1), new QuadraticEquationResult(-1, 1), 4 }
+            new object[] { new QuadraticExpression(1, 0, -1), new QuadraticEquationResult(-1, 1), 4 },
+            new object[] { new QuadraticExpression(2, 0, -2), new QuadraticEquationResult(-1, 1), 16 },
+            new object[] { new QuadraticExpression(2, 6, -20), new QuadraticEquationResult(2, -5), 196 }
         };
 
         [SetUp]

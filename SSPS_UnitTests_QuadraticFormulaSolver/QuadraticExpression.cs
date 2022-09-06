@@ -19,5 +19,13 @@ namespace SSPS_UnitTests_QuadraticFormulaSolver
         public double A { get; set; }
         public double B { get; set; }
         public double C { get; set; }
+
+        public override string ToString()
+        {
+            string aSgn = A < 0 ? "-" : "";
+            string bSgn = B < 0 ? "-" : "+";
+            string cSgn = C < 0 ? "-" : "+";
+            return $"{aSgn}{Math.Abs(A)}x^2 {bSgn} {Math.Abs(B)}x {cSgn} {Math.Abs(C)}";
+        }
     }
 }
